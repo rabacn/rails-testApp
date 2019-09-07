@@ -1,0 +1,15 @@
+<%= @user.name %>, <%= @user.email %>
+<h5>Created at: <%= @user.created_at%> | Last modified at: <%= @user.updated_at%></h5>
+<h6>Currently: <%= Time.now%></h6>
+
+<% provide(:title, @user.name) %>
+<div class="row">
+  <aside class="col-md-4">
+    <Section class="user_info">
+      <h1>
+        <%= gravatar_for @user %>
+        <%= @user.name %>
+      </h1>
+    </section>
+  </aside>
+</div>
