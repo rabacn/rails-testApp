@@ -1,0 +1,115 @@
+/var/lib/gems/2.5.0/gems/activesupport-5.2.3/lib/active_support/testing/constant_lookup.rb:    #     describe "authenticated user" do
+/var/lib/gems/2.5.0/gems/activesupport-5.2.3/lib/active_support/testing/constant_lookup.rb:    #   "WidgetsController::index::authenticated user::returns widgets"
+/var/lib/gems/2.5.0/gems/activesupport-5.2.3/lib/active_support/railtie.rb:    initializer "active_support.set_authenticated_message_encryption" do |app|
+/var/lib/gems/2.5.0/gems/activesupport-5.2.3/lib/active_support/railtie.rb:        unless app.config.active_support.use_authenticated_message_encryption.nil?
+/var/lib/gems/2.5.0/gems/activesupport-5.2.3/lib/active_support/railtie.rb:          ActiveSupport::MessageEncryptor.use_authenticated_message_encryption =
+/var/lib/gems/2.5.0/gems/activesupport-5.2.3/lib/active_support/railtie.rb:            app.config.active_support.use_authenticated_message_encryption
+/var/lib/gems/2.5.0/gems/activesupport-5.2.3/lib/active_support/current_attributes.rb:  #       before_action :authenticate
+/var/lib/gems/2.5.0/gems/activesupport-5.2.3/lib/active_support/current_attributes.rb:  #       def authenticate
+/var/lib/gems/2.5.0/gems/activesupport-5.2.3/lib/active_support/current_attributes.rb:  #         if authenticated_user = User.find_by(id: cookies.encrypted[:user_id])
+/var/lib/gems/2.5.0/gems/activesupport-5.2.3/lib/active_support/current_attributes.rb:  #           Current.user = authenticated_user
+/var/lib/gems/2.5.0/gems/activesupport-5.2.3/lib/active_support/message_encryptor.rb:    cattr_accessor :use_authenticated_message_encryption, instance_accessor: false, default: false
+/var/lib/gems/2.5.0/gems/activesupport-5.2.3/lib/active_support/message_encryptor.rb:        if use_authenticated_message_encryption
+/var/lib/gems/2.5.0/gems/activesupport-5.2.3/lib/active_support/message_encryptor.rb:        @aead_mode ||= new_cipher.authenticated?
+/var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/base.rb:  #     def self.authenticate_unsafely(user_name, password)
+/var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/base.rb:  #     def self.authenticate_safely(user_name, password)
+/var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/base.rb:  #     def self.authenticate_safely_simply(user_name, password)
+/var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/base.rb:  # The <tt>authenticate_unsafely</tt> method inserts the parameters directly into the query
+/var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/base.rb:  # parameters come directly from an HTTP request. The <tt>authenticate_safely</tt> and
+/var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/base.rb:  # <tt>authenticate_safely_simply</tt> both will sanitize the <tt>user_name</tt> and +password+
+/var/lib/gems/2.5.0/gems/activestorage-5.2.3/app/models/active_storage/variant.rb:  # with users. Instead, the +service_url+ should only be exposed as a redirect from a stable, possibly authenticated URL.
+/var/lib/gems/2.5.0/gems/activestorage-5.2.3/app/models/active_storage/blob.rb:  # with users. Instead, the +service_url+ should only be exposed as a redirect from a stable, possibly authenticated URL.
+/var/lib/gems/2.5.0/gems/activestorage-5.2.3/app/controllers/active_storage/disk_controller.rb:# Always go through the BlobsController, or your own authenticated controller, rather than directly
+/var/lib/gems/2.5.0/gems/activestorage-5.2.3/app/controllers/active_storage/blobs_controller.rb:# authenticated redirection controller.
+/var/lib/gems/2.5.0/gems/activestorage-5.2.3/app/controllers/active_storage/representations_controller.rb:# authenticated redirection controller.
+/var/lib/gems/2.5.0/gems/rack-2.0.7/lib/rack/auth/abstract/handler.rb:      def unauthorized(www_authenticate = challenge)
+/var/lib/gems/2.5.0/gems/rack-2.0.7/lib/rack/auth/abstract/handler.rb:            'WWW-Authenticate' => www_authenticate.to_s },
+/var/lib/gems/2.5.0/gems/rack-2.0.7/test/spec_webrick.rb:      res["www-authenticate"].must_equal "Bar realm=X, Baz realm=Y"
+/var/lib/gems/2.5.0/gems/rbnacl-7.0.0/README.md:* [Secret-key Encryption][secretkey]: authenticated symmetric encryption using a
+/var/lib/gems/2.5.0/gems/rbnacl-7.0.0/lib/rbnacl/secret_boxes/xsalsa20poly1305.rb:      # @raise [RbNaCl::CryptoError] If the ciphertext cannot be authenticated.
+/var/lib/gems/2.5.0/gems/rbnacl-7.0.0/lib/rbnacl/signatures/ed25519/verify_key.rb:        # @param message [String] Message to be authenticated
+/var/lib/gems/2.5.0/gems/rbnacl-7.0.0/lib/rbnacl/auth.rb:    # @param [#to_str] message the message to be authenticated
+/var/lib/gems/2.5.0/gems/rbnacl-7.0.0/lib/rbnacl/auth.rb:    # @param [#to_str] message the message to authenticate
+/var/lib/gems/2.5.0/gems/rbnacl-7.0.0/lib/rbnacl/auth.rb:    # @param [#to_str] message the message to be authenticated
+/var/lib/gems/2.5.0/gems/rbnacl-7.0.0/lib/rbnacl/aead/base.rb:      # Encrypts and authenticates a message with additional authenticated data
+/var/lib/gems/2.5.0/gems/rbnacl-7.0.0/lib/rbnacl/aead/base.rb:      # @param additional_data [String] The additional authenticated data
+/var/lib/gems/2.5.0/gems/rbnacl-7.0.0/lib/rbnacl/aead/base.rb:      # @raise [RbNaCl::CryptoError] If the ciphertext cannot be authenticated.
+/var/lib/gems/2.5.0/gems/rbnacl-7.0.0/lib/rbnacl/aead/base.rb:      # Decrypts and verifies an encrypted message with additional authenticated data
+/var/lib/gems/2.5.0/gems/rbnacl-7.0.0/lib/rbnacl/aead/base.rb:      # @param additional_data [String] The additional authenticated data
+/var/lib/gems/2.5.0/gems/rbnacl-7.0.0/lib/rbnacl/aead/base.rb:      # @raise [RbNaCl::CryptoError] If the ciphertext cannot be authenticated.
+/var/lib/gems/2.5.0/gems/rbnacl-7.0.0/lib/rbnacl/boxes/sealed.rb:      # @raise [RbNaCl::CryptoError] If the ciphertext cannot be authenticated.
+/var/lib/gems/2.5.0/gems/rbnacl-7.0.0/lib/rbnacl/boxes/curve25519xsalsa20poly1305.rb:      # @raise [RbNaCl::CryptoError] If the ciphertext cannot be authenticated.
+/var/lib/gems/2.5.0/gems/websocket-driver-0.7.1/lib/websocket/driver/headers.rb:      ALLOWED_DUPLICATES = %w[set-cookie set-cookie2 warning www-authenticate]
+/var/lib/gems/2.5.0/gems/selenium-webdriver-3.142.4/CHANGES:  * Removed deprecated Alert#authenticate
+/var/lib/gems/2.5.0/gems/selenium-webdriver-3.142.4/CHANGES:  * Deprecated Alert#authenticate
+/var/lib/gems/2.5.0/gems/activemodel-5.2.3/lib/active_model/secure_password.rb:      # Adds methods to set and authenticate against a BCrypt password.
+/var/lib/gems/2.5.0/gems/activemodel-5.2.3/lib/active_model/secure_password.rb:      #   user.authenticate('notright')                                   # => false
+/var/lib/gems/2.5.0/gems/activemodel-5.2.3/lib/active_model/secure_password.rb:      #   user.authenticate('mUc3m00RsqyRe')                              # => user
+/var/lib/gems/2.5.0/gems/activemodel-5.2.3/lib/active_model/secure_password.rb:      #   User.find_by(name: 'david').try(:authenticate, 'notright')      # => false
+/var/lib/gems/2.5.0/gems/activemodel-5.2.3/lib/active_model/secure_password.rb:      #   User.find_by(name: 'david').try(:authenticate, 'mUc3m00RsqyRe') # => user
+/var/lib/gems/2.5.0/gems/activemodel-5.2.3/lib/active_model/secure_password.rb:      #   user.authenticate('notright')      # => false
+/var/lib/gems/2.5.0/gems/activemodel-5.2.3/lib/active_model/secure_password.rb:      #   user.authenticate('mUc3m00RsqyRe') # => user
+/var/lib/gems/2.5.0/gems/activemodel-5.2.3/lib/active_model/secure_password.rb:      def authenticate(unencrypted_password)
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/cookies.rb:    def authenticated_encrypted_cookie_salt
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/cookies.rb:    def use_authenticated_cookie_encryption
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/cookies.rb:    AUTHENTICATED_ENCRYPTED_COOKIE_SALT = "action_dispatch.authenticated_encrypted_cookie_salt".freeze
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/cookies.rb:    USE_AUTHENTICATED_COOKIE_ENCRYPTION = "action_dispatch.use_authenticated_cookie_encryption".freeze
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/cookies.rb:            request.use_authenticated_cookie_encryption
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/cookies.rb:          if request.use_authenticated_cookie_encryption
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/cookies.rb:        if request.use_authenticated_cookie_encryption
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/cookies.rb:          secret = request.key_generator.generate_key(request.authenticated_encrypted_cookie_salt, key_len)
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_dispatch/railtie.rb:    config.action_dispatch.authenticated_encrypted_cookie_salt = "authenticated encrypted cookie"
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_dispatch/railtie.rb:    config.action_dispatch.use_authenticated_cookie_encryption = false
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_controller/base.rb:  #   session[:person] = Person.authenticate(user_name, password)
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_controller/metal/http_authentication.rb:    #     http_basic_authenticate_with name: "dhh", password: "secret", except: :index
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_controller/metal/http_authentication.rb:    #     before_action :set_account, :authenticate
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_controller/metal/http_authentication.rb:    #       def authenticate
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_controller/metal/http_authentication.rb:    #           if user = authenticate_with_http_basic { |u, p| @account.users.authenticate(u, p) }
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_controller/metal/http_authentication.rb:    #           if session_authenticated?
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_controller/metal/http_authentication.rb:    #             @current_user = @account.users.find(session[:authenticated][:user_id])
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_controller/metal/http_authentication.rb:          def http_basic_authenticate_with(options = {})
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_controller/metal/http_authentication.rb:              authenticate_or_request_with_http_basic(options[:realm] || "Application") do |name, password|
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_controller/metal/http_authentication.rb:        def authenticate_or_request_with_http_basic(realm = "Application", message = nil, &login_procedure)
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_controller/metal/http_authentication.rb:          authenticate_with_http_basic(&login_procedure) || request_http_basic_authentication(realm, message)
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_controller/metal/http_authentication.rb:        def authenticate_with_http_basic(&login_procedure)
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_controller/metal/http_authentication.rb:          HttpAuthentication::Basic.authenticate(request, &login_procedure)
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_controller/metal/http_authentication.rb:      def authenticate(request, &login_procedure)
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_controller/metal/http_authentication.rb:    #     before_action :authenticate, except: [:index]
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_controller/metal/http_authentication.rb:    #       def authenticate
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_controller/metal/http_authentication.rb:    #         authenticate_or_request_with_http_digest(REALM) do |username|
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_controller/metal/http_authentication.rb:    # The +authenticate_or_request_with_http_digest+ block must return the user's password
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_controller/metal/http_authentication.rb:    # authenticate as the user at this +realm+, but would not have the user's password to try using at
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_controller/metal/http_authentication.rb:        def authenticate_or_request_with_http_digest(realm = "Application", message = nil, &password_procedure)
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_controller/metal/http_authentication.rb:          authenticate_with_http_digest(realm, &password_procedure) || request_http_digest_authentication(realm, message)
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_controller/metal/http_authentication.rb:        def authenticate_with_http_digest(realm = "Application", &password_procedure)
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_controller/metal/http_authentication.rb:          HttpAuthentication::Digest.authenticate(request, realm, &password_procedure)
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_controller/metal/http_authentication.rb:      def authenticate(request, realm, &password_procedure)
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_controller/metal/http_authentication.rb:    #     before_action :authenticate, except: [ :index ]
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_controller/metal/http_authentication.rb:    #       def authenticate
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_controller/metal/http_authentication.rb:    #         authenticate_or_request_with_http_token do |token, options|
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_controller/metal/http_authentication.rb:    #     before_action :set_account, :authenticate
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_controller/metal/http_authentication.rb:    #       def authenticate
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_controller/metal/http_authentication.rb:    #           if user = authenticate_with_http_token { |t, o| @account.users.authenticate(t, o) }
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_controller/metal/http_authentication.rb:    #           if session_authenticated?
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_controller/metal/http_authentication.rb:    #             @current_user = @account.users.find(session[:authenticated][:user_id])
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_controller/metal/http_authentication.rb:    # authenticate, try this rule in your Apache setup:
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_controller/metal/http_authentication.rb:        def authenticate_or_request_with_http_token(realm = "Application", message = nil, &login_procedure)
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_controller/metal/http_authentication.rb:          authenticate_with_http_token(&login_procedure) || request_http_token_authentication(realm, message)
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_controller/metal/http_authentication.rb:        def authenticate_with_http_token(&login_procedure)
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_controller/metal/http_authentication.rb:          Token.authenticate(self, &login_procedure)
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_controller/metal/http_authentication.rb:      #     authenticate(controller) { |token, options| ... }
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_controller/metal/http_authentication.rb:      def authenticate(controller, &login_procedure)
+/var/lib/gems/2.5.0/gems/actionpack-5.2.3/CHANGELOG.md:    `action_dispatch.use_authenticated_cookie_encryption` configuration value.
+/var/lib/gems/2.5.0/gems/railties-5.2.3/lib/rails/generators/rails/app/templates/config/initializers/new_framework_defaults_5_2.rb.tt:# Use AES-256-GCM authenticated encryption for encrypted cookies.
+/var/lib/gems/2.5.0/gems/railties-5.2.3/lib/rails/generators/rails/app/templates/config/initializers/new_framework_defaults_5_2.rb.tt:# Rails.application.config.action_dispatch.use_authenticated_cookie_encryption = true
+/var/lib/gems/2.5.0/gems/railties-5.2.3/lib/rails/generators/rails/app/templates/config/initializers/new_framework_defaults_5_2.rb.tt:# Use AES-256-GCM authenticated encryption as default cipher for encrypting messages
+/var/lib/gems/2.5.0/gems/railties-5.2.3/lib/rails/generators/rails/app/templates/config/initializers/new_framework_defaults_5_2.rb.tt:# instead of AES-256-CBC, when use_authenticated_message_encryption is set to true.
+/var/lib/gems/2.5.0/gems/railties-5.2.3/lib/rails/generators/rails/app/templates/config/initializers/new_framework_defaults_5_2.rb.tt:# Rails.application.config.active_support.use_authenticated_message_encryption = true
+/var/lib/gems/2.5.0/gems/railties-5.2.3/lib/rails/generators/actions.rb:      #   generate(:authenticated, "user session")
+/var/lib/gems/2.5.0/gems/railties-5.2.3/lib/rails/application.rb:          "action_dispatch.authenticated_encrypted_cookie_salt" => config.action_dispatch.authenticated_encrypted_cookie_salt,
+/var/lib/gems/2.5.0/gems/railties-5.2.3/lib/rails/application.rb:          "action_dispatch.use_authenticated_cookie_encryption" => config.action_dispatch.use_authenticated_cookie_encryption,
+/var/lib/gems/2.5.0/gems/railties-5.2.3/lib/rails/application/configuration.rb:            action_dispatch.use_authenticated_cookie_encryption = true
+/var/lib/gems/2.5.0/gems/railties-5.2.3/lib/rails/application/configuration.rb:            active_support.use_authenticated_message_encryption = true
+/var/lib/gems/2.5.0/gems/ffi-1.11.1/ext/ffi_c/libffi/.travis/install.sh:	sudo apt-get install -y --allow-unauthenticated moxielogic-moxie-elf-gcc moxielogic-moxie-elf-gcc-c++ moxielogic-moxie-elf-gcc-libstdc++ moxielogic-moxie-elf-gdb-sim
+/var/lib/gems/2.5.0/gems/puma-3.12.1/lib/puma/app/status.rb:      def authenticate(env)
+/var/lib/gems/2.5.0/gems/puma-3.12.1/lib/puma/app/status.rb:        unless authenticate(env)

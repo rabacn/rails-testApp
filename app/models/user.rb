@@ -7,4 +7,9 @@ class User < ApplicationRecord
                     uniqueness: { case_sensitive: false }
   has_secure_password
   validates :password, presence: true, length: { minimum: 7 }
+
+  def User.digest(string)
+    RbNaCl::PasswordHash.argon2_str(string)
+  end
+
 end
